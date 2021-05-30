@@ -18,10 +18,11 @@ body{
   width: 100%;
   height: 100vh;
   top: 0;
-  background-image: url('img/back11.png');
+  background-image: url('../img/back11.png');
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 50%;
+  overflow: hidden;
   box-shadow: inset 10px 10px 40px black;
   margin-left: 3%;
 
@@ -32,7 +33,8 @@ body{
   width: 100%;
   height: 100vh;
   top: 0;
-  background-image: url('img/back22.png');
+  overflow: hidden;
+  background-image: url('../img/back22.png');
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: 10px 10px 40px black;
@@ -56,6 +58,7 @@ body{
   height: 100%;
   left: 0;
   top: 0;
+  overflow: hidden;
   position: absolute;
   background: url('../img/back.jpg') 
   no-repeat left center / cover;
@@ -68,6 +71,7 @@ body{
   top: 0;
   position: absolute;
   background-color: black;
+  overflow: hidden;
   opacity: 80%;
   no-repeat left center / cover;
 }
@@ -862,17 +866,12 @@ Responsive tab starts
     color: white;
 }
 
-.item-img {
+.works .item-img{
     position: relative;
-    display: block;
-    top: 20px;
- }
+    margin-top: 20px;
+}
 
- .item-img:nth-child(1){
-
- }
-
-.item-img:hover .item-img-overlay{
+.works .item-img:hover .item-img-overlay{
     visibility: visible;
     opacity: 1;
 }
